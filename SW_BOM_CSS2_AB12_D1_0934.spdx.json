@@ -1,0 +1,32 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "comment": "This document is manually created by Robert Bosch AG for MAN",
+    "created": "2025-09-10T15:12:00.00Z",
+    "creators": [
+      "Organization: Robert Bosch AG"
+    ]
+  },
+  "name": "CSS2_AB12_D1",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://spdx.org/spdxdocs/Traton",
+  "documentDescribes": [
+    "SPDXRef-DOCUMENT"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-pkg:CSS2_AB12_D1@0934",
+      "name": "CSS2_AB12_D1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator" : "cpe:2.3:a:Robert_Bosch_AG:CSS2_AB12_D1:0934:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ]
+    }
+  ]
+}

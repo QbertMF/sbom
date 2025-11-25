@@ -1,0 +1,14 @@
+{
+  "name": "sbom",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SPDX document generator",
+  "main": "gsbom.js",
+  "scripts": {
+    "start": "node gsbom.js",
+    "generate": "node gsbom.js"
+  },
+  "dependencies": {
+    "@spdx/tools": "^0.1.0"
+  }
+}
