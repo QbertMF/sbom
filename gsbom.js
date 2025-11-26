@@ -104,9 +104,9 @@ function createSPDXWithCPE(identifier) {
 }
 
 // Use the manual approach instead
-//createSPDXWithCPE('CVM3_Car12_Version');
+createSPDXWithCPE('CVM3_Car12_Version');
 createSPDXWithCPE('CVM3_MY28_Version');
-//createSPDXWithCPE('RIOx_version');
-//createSPDXWithCPE('EIOx_version');
+createSPDXWithCPE('RIOx_version');
+createSPDXWithCPE('EIOx_version');
 
 // <ECU name>_<sw-number>_<sowftware-part-number>.spdx.json

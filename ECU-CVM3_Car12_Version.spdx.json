@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-25T15:09:41.012Z",
+    "created": "2025-11-25T15:09:41.008Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
-  "name": "sbom-cvm3_my28_version",
+  "name": "sbom-cvm3_car12_version",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28_Version-1764083381012",
+  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_Car12_Version-1764083381009",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
@@ -19,12 +19,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_MCAL:V1.25:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_MCAL:V1.30:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V1.25"
+      "versionInfo": "V1.30"
     },
     {
       "SPDXID": "SPDXRef-pkg-1",
@@ -34,12 +34,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyPack:V1.4.23.2:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyPack:V1.0.1.2:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V1.4.23.2"
+      "versionInfo": "V1.0.1.2"
     },
     {
       "SPDXID": "SPDXRef-pkg-2",
@@ -58,18 +58,18 @@
     },
     {
       "SPDXID": "SPDXRef-pkg-3",
-      "name": "RTA-CAR",
+      "name": "COMASSO",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:ETAS_GmbH:RTA-CAR:12.0.0:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:COMASSO.org:COMASSO:4.0.2.5:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
-      "supplier": "Organization: ETAS GmbH",
-      "versionInfo": "12.0.0"
+      "supplier": "Organization: COMASSO.org",
+      "versionInfo": "4.0.2.5"
     },
     {
       "SPDXID": "SPDXRef-pkg-4",

@@ -17,12 +17,20 @@
       "remark": ""
     },
     {
-      "version": "04/01/2000",
+      "version": "1.4.0",
       "component": "uC/OS-MPU",
       "vendor": "Embedded Office GmbH & Co. KG",
       "product_name": "",
       "part": "",
       "remark": "OS"
+    },
+       {
+      "version": "12.0.0",
+      "component": "RTA-CAR",
+      "vendor": "ETAS GmbH",
+      "product_name": "",
+      "part": "",
+      "remark": ""
     },
     {
       "version": "4.0.2.5",
@@ -51,7 +59,7 @@
   ],
   "CVM3_MY28_Version": [
     {
-      "version": "V1.25",
+      "version": "V2.25",
       "component": "Infineon MCAL",
       "vendor": "Infineon AG",
       "product_name": "",
@@ -67,7 +75,7 @@
       "remark": ""
     },
     {
-      "version": "04/01/2000",
+      "version": "1.4.0",
       "component": "uC/OS-MPU",
       "vendor": "Embedded Office GmbH & Co. KG",
       "product_name": "",
@@ -117,7 +125,7 @@
       "remark": ""
     },
     {
-      "version": "04/01/2000",
+      "version": "1.4.0",
       "component": "uC/OS-MPU",
       "vendor": "Embedded Office GmbH & Co. KG",
       "product_name": "",
@@ -151,7 +159,7 @@
       "remark": ""
     },
     {
-      "version": "PR7.2 (Rel514)",
+      "version": "PR5 (Rel594)",
       "component": "Infineon SafetyLib",
       "vendor": "Infineon AG",
       "product_name": "",
@@ -159,7 +167,7 @@
       "remark": ""
     },
     {
-      "version": "04/01/2000",
+      "version": "1.4.0",
       "component": "uC/OS-MPU",
       "vendor": "Embedded Office GmbH & Co. KG",
       "product_name": "",
