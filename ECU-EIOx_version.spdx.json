@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-25T15:09:41.017Z",
+    "created": "2025-11-26T18:31:41.274Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
   "name": "sbom-eiox_version",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/EIOx_version-1764083381017",
+  "documentNamespace": "http://spdx.org/spdxdocs/EIOx_version-1764181901274",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
@@ -34,12 +34,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyLib:PR7.2Rel514:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyLib:PR5Rel594:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "PR7.2 (Rel514)"
+      "versionInfo": "PR5 (Rel594)"
     },
     {
       "SPDXID": "SPDXRef-pkg-2",
@@ -49,12 +49,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:04012000:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Embedded Office GmbH & Co. KG",
-      "versionInfo": "04/01/2000"
+      "versionInfo": "1.4.0"
     },
     {
       "SPDXID": "SPDXRef-pkg-3",

@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-25T15:09:41.008Z",
+    "created": "2025-11-26T18:31:41.265Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
   "name": "sbom-cvm3_car12_version",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_Car12_Version-1764083381009",
+  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_Car12_Version-1764181901265",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
@@ -49,15 +49,30 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:04012000:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Embedded Office GmbH & Co. KG",
-      "versionInfo": "04/01/2000"
+      "versionInfo": "1.4.0"
     },
     {
       "SPDXID": "SPDXRef-pkg-3",
+      "name": "RTA-CAR",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:ETAS_GmbH:RTA-CAR:12.0.0:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ],
+      "supplier": "Organization: ETAS GmbH",
+      "versionInfo": "12.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg-4",
       "name": "COMASSO",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -72,7 +87,7 @@
       "versionInfo": "4.0.2.5"
     },
     {
-      "SPDXID": "SPDXRef-pkg-4",
+      "SPDXID": "SPDXRef-pkg-5",
       "name": "CycurHSM",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -87,7 +102,7 @@
       "versionInfo": "2.7.13.r0_v3"
     },
     {
-      "SPDXID": "SPDXRef-pkg-5",
+      "SPDXID": "SPDXRef-pkg-6",
       "name": "CycurLIB",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -132,6 +147,11 @@
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
       "relatedSpdxElement": "SPDXRef-pkg-5"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-pkg-6"
     }
   ]
 }

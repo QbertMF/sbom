@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-25T15:09:41.012Z",
+    "created": "2025-11-26T18:31:41.269Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
   "name": "sbom-cvm3_my28_version",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28_Version-1764083381012",
+  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28_Version-1764181901269",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
@@ -19,12 +19,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_MCAL:V1.25:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_MCAL:V2.25:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V1.25"
+      "versionInfo": "V2.25"
     },
     {
       "SPDXID": "SPDXRef-pkg-1",
@@ -49,12 +49,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:04012000:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Embedded Office GmbH & Co. KG",
-      "versionInfo": "04/01/2000"
+      "versionInfo": "1.4.0"
     },
     {
       "SPDXID": "SPDXRef-pkg-3",
