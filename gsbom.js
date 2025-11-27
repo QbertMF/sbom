@@ -33,7 +33,11 @@ function createSPDXWithCPE(identifier) {
         return;
     }
 
-    console.log(`=== ${identifier} Packages ===`);
+    const categoryData = sbomData[identifier];
+    const ecuName = categoryData.ecu_name;
+    const components = categoryData.components;
+
+    console.log(`=== ${identifier} (ECU: ${ecuName}) Packages ===`);
     
     // Create SPDX structure manually
     const spdxDocument = {
@@ -43,7 +47,7 @@ function createSPDXWithCPE(identifier) {
             "created": new Date().toISOString(),
             "creators": ["Person: Markus Foerstel"]
         },
-        "name": `sbom-${identifier.toLowerCase()}`,
+        "name": `SBOM-${ecuName}`,
         "dataLicense": "CC0-1.0",
         "documentNamespace": `http://spdx.org/spdxdocs/${identifier}-${Date.now()}`,
         "packages": [],
@@ -51,11 +55,12 @@ function createSPDXWithCPE(identifier) {
     };
 
     // Add packages with CPE information
-    sbomData[identifier].forEach((component, index) => {
+    components.forEach((component, index) => {
         console.log(`${index + 1}. Component: ${component.component}`);
         console.log(`   Version: ${component.version}`);
         console.log(`   Vendor: ${component.vendor || 'Not specified'}`);
         console.log(`   Product: ${component.product_name || 'Not specified'}`);
+        console.log(`   Category: ${component.category || 'OTHER'}`);
         
         const cpeString = generateCPE(component);
         console.log(`   CPE: ${cpeString}`);
@@ -70,7 +75,7 @@ function createSPDXWithCPE(identifier) {
             "filesAnalyzed": false,
             "externalRefs": [
                 {
-                    "referenceCategory": "SECURITY",
+                    "referenceCategory": `${component.category || "SECURITY"}`,
                     "referenceLocator": cpeString,
                     "referenceType": "cpe23Type"
                 }
@@ -103,10 +108,9 @@ function createSPDXWithCPE(identifier) {
     console.log(`Manual SPDX document with CPE written to: ${filename}`);
 }
 
-// Use the manual approach instead
-createSPDXWithCPE('CVM3_Car12_Version');
-createSPDXWithCPE('CVM3_MY28_Version');
-createSPDXWithCPE('RIOx_version');
-createSPDXWithCPE('EIOx_version');
+// Dynamically iterate over all categories in Sbom.json and generate SPDX files
+Object.keys(sbomData).forEach(identifier => {
+    createSPDXWithCPE(identifier);
+});
 
 // <ECU name>_<sw-number>_<sowftware-part-number>.spdx.json

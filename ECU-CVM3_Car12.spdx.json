@@ -2,29 +2,29 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-26T18:31:41.269Z",
+    "created": "2025-11-27T17:15:35.824Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
-  "name": "sbom-cvm3",
+  "name": "SBOM-CVM3",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28_Version-1764181901269",
+  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_Car12-1764263735825",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
-      "name": "Infineon MCAL",
+      "name": "MC-ISAR_AS422_TC3xx_MCAL",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS422_TC3xx:V2.25:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS422_TC3xx_MCAL:V1.30:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V2.25"
+      "versionInfo": "V1.30"
     },
     {
       "SPDXID": "SPDXRef-pkg-1",
@@ -34,12 +34,12 @@
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyPack:V1.4.23.2:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyPack:V1.0.1.2:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V1.4.23.2"
+      "versionInfo": "V1.0.1.2"
     },
     {
       "SPDXID": "SPDXRef-pkg-2",
@@ -73,6 +73,21 @@
     },
     {
       "SPDXID": "SPDXRef-pkg-4",
+      "name": "COMASSO",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "cpe:2.3:a:COMASSO.org:COMASSO:4.0.2.5:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ],
+      "supplier": "Organization: COMASSO.org",
+      "versionInfo": "4.0.2.5"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg-5",
       "name": "CycurHSM",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -87,7 +102,7 @@
       "versionInfo": "2.7.13.r0_v3"
     },
     {
-      "SPDXID": "SPDXRef-pkg-5",
+      "SPDXID": "SPDXRef-pkg-6",
       "name": "CycurLIB",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -132,6 +147,11 @@
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
       "relatedSpdxElement": "SPDXRef-pkg-5"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-pkg-6"
     }
   ]
 }

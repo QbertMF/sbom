@@ -1,8 +1,10 @@
 {
-  "CVM3_Car12_Version": [
+  "CVM3_Car12": {
+    "ecu_name": "CVM3",
+    "components": [
     {
       "version": "V1.30",
-      "component": "Infineon MCAL",
+      "component": "MC-ISAR_AS422_TC3xx_MCAL",
       "vendor": "Infineon AG",
       "product_name": "",
       "part": "",
@@ -63,11 +65,14 @@
       "remark": "",
       "category": "SECURITY"
     }
-  ],
-  "CVM3_MY28_Version": [
+  ]
+  },
+  "CVM3_MY28": {
+    "ecu_name": "CVM3",
+    "components": [
     {
       "version": "V2.25",
-      "component": "Infineon MCAL",
+      "component": "MC-ISAR_AS422_TC3xx_MCAL",
       "vendor": "Infineon AG",
       "product_name": "",
       "part": "",
@@ -119,11 +124,14 @@
       "remark": "",
       "category": "SECURITY"
     }
-  ],
-  "RIOx_version": [
+  ]
+  },
+  "RIOx": {
+    "ecu_name": "RIOx",
+    "components": [
     {
       "version": "V2.1.0",
-      "component": "Infineon MCAL",
+      "component": "MC-ISAR_AS4XX_TC29xBB_MCAL",
       "vendor": "Infineon AG",
       "product_name": "",
       "part": "",
@@ -166,11 +174,14 @@
       "remark": "",
       "category": "SECURITY"
     }
-  ],
-  "EIOx_version": [
+  ]
+  },
+  "EIOx": {
+    "ecu_name": "EIOx",
+    "components": [
     {
       "version": "V3.0.0",
-      "component": "Infineon MCAL",
+      "component": "MC-ISAR_AS4XX_TC27xCA_MCAL",
       "vendor": "Infineon AG",
       "product_name": "",
       "part": "",
@@ -214,4 +225,5 @@
       "category": "SECURITY"
     }
   ]
+  }
 }

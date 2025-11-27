@@ -2,24 +2,24 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-26T18:31:41.272Z",
+    "created": "2025-11-27T17:15:35.832Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
-  "name": "sbom-rio2",
+  "name": "SBOM-RIOx",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/RIOx_version-1764181901272",
+  "documentNamespace": "http://spdx.org/spdxdocs/RIOx-1764263735832",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
-      "name": "Infineon MCAL",
+      "name": "MC-ISAR_AS4XX_TC29xBB_MCAL",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS4XX_TC29xBB:V2.1.0:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS4XX_TC29xBB_MCAL:V2.1.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],

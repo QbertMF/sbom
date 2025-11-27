@@ -2,44 +2,44 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-26T18:31:41.265Z",
+    "created": "2025-11-27T17:15:35.834Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
-  "name": "sbom-cvm3",
+  "name": "SBOM-EIOx",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_Car12_Version-1764181901265",
+  "documentNamespace": "http://spdx.org/spdxdocs/EIOx-1764263735834",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
-      "name": "Infineon MCAL",
+      "name": "MC-ISAR_AS4XX_TC27xCA_MCAL",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS422_TC3xx:V1.30:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS4XX_TC27xCA_MCAL:V3.0.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V1.30"
+      "versionInfo": "V3.0.0"
     },
     {
       "SPDXID": "SPDXRef-pkg-1",
-      "name": "Infineon SafetyPack",
+      "name": "Infineon SafetyLib",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyPack:V1.0.1.2:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyLib:PR5Rel594:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
       "supplier": "Organization: Infineon AG",
-      "versionInfo": "V1.0.1.2"
+      "versionInfo": "PR5 (Rel594)"
     },
     {
       "SPDXID": "SPDXRef-pkg-2",
@@ -58,21 +58,6 @@
     },
     {
       "SPDXID": "SPDXRef-pkg-3",
-      "name": "RTA-CAR",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "externalRefs": [
-        {
-          "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:ETAS_GmbH:RTA-CAR:12.0.0:*:*:*:*:*:*:*",
-          "referenceType": "cpe23Type"
-        }
-      ],
-      "supplier": "Organization: ETAS GmbH",
-      "versionInfo": "12.0.0"
-    },
-    {
-      "SPDXID": "SPDXRef-pkg-4",
       "name": "COMASSO",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -87,22 +72,7 @@
       "versionInfo": "4.0.2.5"
     },
     {
-      "SPDXID": "SPDXRef-pkg-5",
-      "name": "CycurHSM",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "externalRefs": [
-        {
-          "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:ETAS_GmbH:CycurHSM:2.7.13.r0_v3:*:*:*:*:*:*:*",
-          "referenceType": "cpe23Type"
-        }
-      ],
-      "supplier": "Organization: ETAS GmbH",
-      "versionInfo": "2.7.13.r0_v3"
-    },
-    {
-      "SPDXID": "SPDXRef-pkg-6",
+      "SPDXID": "SPDXRef-pkg-4",
       "name": "CycurLIB",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
@@ -142,16 +112,6 @@
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
       "relatedSpdxElement": "SPDXRef-pkg-4"
-    },
-    {
-      "spdxElementId": "SPDXRef-DOCUMENT",
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-pkg-5"
-    },
-    {
-      "spdxElementId": "SPDXRef-DOCUMENT",
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-pkg-6"
     }
   ]
 }
