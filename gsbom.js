@@ -1,4 +1,3 @@
-import * as spdx from "@spdx/tools";
 import fs from 'fs';
 
 // Load the SBOM data

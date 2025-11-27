@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-27T17:15:35.832Z",
+    "created": "2025-11-27T17:40:25.828Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
   "name": "SBOM-RIOx",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/RIOx-1764263735832",
+  "documentNamespace": "http://spdx.org/spdxdocs/RIOx-1764265225828",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",

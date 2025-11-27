@@ -7,8 +7,5 @@
   "scripts": {
     "start": "node gsbom.js",
     "generate": "node gsbom.js"
-  },
-  "dependencies": {
-    "@spdx/tools": "^0.1.0"
   }
 }

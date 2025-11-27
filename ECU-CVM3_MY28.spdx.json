@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-27T17:15:35.829Z",
+    "created": "2025-11-27T17:40:25.825Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
   "name": "SBOM-CVM3",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28-1764263735829",
+  "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28-1764265225825",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
