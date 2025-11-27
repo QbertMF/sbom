@@ -7,7 +7,7 @@
       "Person: Markus Foerstel"
     ]
   },
-  "name": "sbom-cvm3_my28_version",
+  "name": "sbom-cvm3",
   "dataLicense": "CC0-1.0",
   "documentNamespace": "http://spdx.org/spdxdocs/CVM3_MY28_Version-1764181901269",
   "packages": [
@@ -18,8 +18,8 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_MCAL:V2.25:*:*:*:*:*:*:*",
+          "referenceCategory": "OTHER",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:MC-ISAR_AS422_TC3xx:V2.25:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
@@ -33,7 +33,7 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
+          "referenceCategory": "OTHER",
           "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyPack:V1.4.23.2:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
@@ -48,7 +48,7 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
+          "referenceCategory": "OTHER",
           "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
@@ -63,7 +63,7 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
+          "referenceCategory": "OTHER",
           "referenceLocator": "cpe:2.3:a:ETAS_GmbH:RTA-CAR:12.0.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }

@@ -7,7 +7,7 @@
       "Person: Markus Foerstel"
     ]
   },
-  "name": "sbom-eiox_version",
+  "name": "sbom-eiox",
   "dataLicense": "CC0-1.0",
   "documentNamespace": "http://spdx.org/spdxdocs/EIOx_version-1764181901274",
   "packages": [
@@ -18,8 +18,8 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_MCAL:V3.0.0:*:*:*:*:*:*:*",
+          "referenceCategory": "OTHER",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:InfiMC-ISAR_AS4XX_TC27xCAneon_MCAL:V3.0.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
@@ -33,7 +33,7 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
+          "referenceCategory": "OTHER",
           "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyLib:PR5Rel594:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
@@ -48,7 +48,7 @@
       "filesAnalyzed": false,
       "externalRefs": [
         {
-          "referenceCategory": "SECURITY",
+          "referenceCategory": "OTHER",
           "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
