@@ -2,14 +2,14 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-11-27T17:40:25.831Z",
+    "created": "2025-12-04T07:14:27.464Z",
     "creators": [
       "Person: Markus Foerstel"
     ]
   },
   "name": "SBOM-EIOx",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/EIOx-1764265225831",
+  "documentNamespace": "http://spdx.org/spdxdocs/EIOx-1764832467464",
   "packages": [
     {
       "SPDXID": "SPDXRef-pkg-0",
@@ -23,37 +23,37 @@
           "referenceType": "cpe23Type"
         }
       ],
-      "supplier": "Organization: Infineon AG",
+      "supplier": "Organization: Infineon_AG",
       "versionInfo": "V3.0.0"
     },
     {
       "SPDXID": "SPDXRef-pkg-1",
-      "name": "Infineon SafetyLib",
+      "name": "Infineon_SafetyLib",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyLib:PR5Rel594:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:Infineon_AG:Infineon_SafetyLib:PR5_Rel594:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
-      "supplier": "Organization: Infineon AG",
-      "versionInfo": "PR5 (Rel594)"
+      "supplier": "Organization: Infineon_AG",
+      "versionInfo": "PR5_Rel594"
     },
     {
       "SPDXID": "SPDXRef-pkg-2",
-      "name": "uC/OS-MPU",
+      "name": "uCOS-MPU",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "externalRefs": [
         {
           "referenceCategory": "OTHER",
-          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH_&_Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:o:Embedded_Office_GmbH__Co._KG:uCOS-MPU:1.4.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         }
       ],
-      "supplier": "Organization: Embedded Office GmbH & Co. KG",
+      "supplier": "Organization: Embedded_Office_GmbH__Co._KG",
       "versionInfo": "1.4.0"
     },
     {
@@ -83,7 +83,7 @@
           "referenceType": "cpe23Type"
         }
       ],
-      "supplier": "Organization: ETAS GmbH",
+      "supplier": "Organization: ETAS_GmbH",
       "versionInfo": "4.15.0"
     }
   ],

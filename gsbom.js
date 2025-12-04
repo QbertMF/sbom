@@ -10,16 +10,17 @@ function generateCPE(component) {
     
     const part = component.remark && component.remark.toLowerCase() === "os" ? "o" : "a"; // 'a' for application, 'h' for hardware, 'o' for operating system
     
-    // CPE allows ampersands (&) - only replace spaces with underscores and remove truly problematic characters
-    // Keep alphanumeric, underscores, hyphens, periods, and ampersands
+    // CPE constituents must not contain spaces - replace with underscores
+    // Keep alphanumeric, underscores, hyphens, and periods
+    // Preserve leading underscores
     const vendor = component.vendor ? 
-        component.vendor.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.&]/g, "") : 
+        component.vendor.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "") : 
         "unknown_vendor";
     const product = component.component ? 
-        component.component.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.&]/g, "") : 
+        component.component.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "") : 
         "unknown_product";
     const version = component.version ? 
-        component.version.replace(/[^a-zA-Z0-9._\-]/g, "") : 
+        component.version.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9._\-]/g, "") : 
         "unknown_version";
     
     return `cpe:2.3:${part}:${vendor}:${product}:${version}:*:*:*:*:*:*:*`;
@@ -55,9 +56,20 @@ function createSPDXWithCPE(identifier) {
 
     // Add packages with CPE information
     components.forEach((component, index) => {
-        console.log(`${index + 1}. Component: ${component.component}`);
-        console.log(`   Version: ${component.version}`);
-        console.log(`   Vendor: ${component.vendor || 'Not specified'}`);
+        // Apply same character replacements as CPE generation
+        const cleanedComponentName = component.component ? 
+            component.component.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "") : 
+            component.component;
+        const cleanedVendor = component.vendor ? 
+            component.vendor.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "") : 
+            component.vendor;
+        const cleanedVersion = component.version ? 
+            component.version.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9._\-]/g, "") : 
+            component.version;
+
+        console.log(`${index + 1}. Component: ${cleanedComponentName}`);
+        console.log(`   Version: ${cleanedVersion}`);
+        console.log(`   Vendor: ${cleanedVendor || 'Not specified'}`);
         console.log(`   Product: ${component.product_name || 'Not specified'}`);
         console.log(`   Category: ${component.category || 'OTHER'}`);
         
@@ -69,7 +81,7 @@ function createSPDXWithCPE(identifier) {
         
         const spdxPackage = {
             "SPDXID": packageId,
-            "name": `${component.component}`,
+            "name": cleanedComponentName,
             "downloadLocation": "NOASSERTION",
             "filesAnalyzed": false,
             "externalRefs": [
@@ -82,13 +94,13 @@ function createSPDXWithCPE(identifier) {
         };
 
         // Add vendor information if available
-        if (component.vendor) {
-            spdxPackage.supplier = `Organization: ${component.vendor}`;
+        if (cleanedVendor) {
+            spdxPackage.supplier = `Organization: ${cleanedVendor}`;
         }
 
         // Add version if available
-        if (component.version) {
-            spdxPackage.versionInfo = component.version;
+        if (cleanedVersion) {
+            spdxPackage.versionInfo = cleanedVersion;
         }
 
         spdxDocument.packages.push(spdxPackage);
